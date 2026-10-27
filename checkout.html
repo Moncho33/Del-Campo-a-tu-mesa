@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout | CampoDirecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header id="app-header"></header>
+    <main>
+        <h1 id="page-title" class="page-title">Confirmar pedido</h1>
+        <p class="muted">Revisa tu pedido y déjanos tus datos. Al confirmar se abre WhatsApp para enviarlo a la tienda.</p>
+        <section class="card">
+            <ul id="resumenPedido" class="lista"></ul>
+            <p id="totalCheckout" class="total"></p>
+        </section>
+        <form id="checkoutForm" class="card" style="margin-top:14px;">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" required>
+
+            <label for="direccion">Dirección o barrio</label>
+            <input id="direccion" name="direccion" required>
+
+            <label for="notas">Notas (opcional)</label>
+            <textarea id="notas" name="notas" rows="3" placeholder="Horario, referencias, etc."></textarea>
+
+            <button type="submit">Enviar pedido por WhatsApp</button>
+        </form>
+    </main>
+    <nav id="app-nav"></nav>
+    <script src="script/datos.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/checkout.js"></script>
+</body>
+</html>

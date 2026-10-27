@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin | CampoDirecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header id="app-header"></header>
+    <main>
+        <h1 id="page-title" class="page-title">Panel de la tienda</h1>
+        <section id="loginAdmin" class="card">
+            <p class="muted">Clave local de la tienda (por ahora: campo2026). Cámbiala en script/datos.js.</p>
+            <label for="clave">Clave</label>
+            <input id="clave" type="password">
+            <button id="btnEntrarAdmin" type="button">Entrar</button>
+        </section>
+        <section id="panelAdmin" hidden>
+            <form id="formProducto" class="card">
+                <input type="hidden" id="productoId">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" required>
+                <label for="precio">Precio</label>
+                <input id="precio" type="number" min="0" required>
+                <label for="unidad">Unidad</label>
+                <input id="unidad" placeholder="kg, atado, unidad" required>
+                <label for="stock">Stock</label>
+                <input id="stock" type="number" min="0" value="10">
+                <label for="emoji">Emoji</label>
+                <input id="emoji" maxlength="4" value="🥬">
+                <label for="descripcion">Descripción</label>
+                <textarea id="descripcion" rows="3"></textarea>
+                <div class="switch-row">
+                    <label for="activo">Visible en catálogo</label>
+                    <input id="activo" type="checkbox" checked>
+                </div>
+                <div class="switch-row">
+                    <label for="destacado">Destacado en inicio</label>
+                    <input id="destacado" type="checkbox">
+                </div>
+                <div class="acciones">
+                    <button type="submit">Guardar producto</button>
+                    <button id="btnCancelar" class="btn-secundario" type="button">Limpiar</button>
+                </div>
+            </form>
+            <h2 class="page-title" style="margin-top:18px;">Catálogo</h2>
+            <ul id="listaAdmin" class="lista"></ul>
+        </section>
+    </main>
+    <nav id="app-nav"></nav>
+    <script src="script/datos.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/admin.js"></script>
+</body>
+</html>

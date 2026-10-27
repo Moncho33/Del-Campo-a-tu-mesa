@@ -1,0 +1,18 @@
+{
+  "name": "CampoDirecto",
+  "short_name": "CampoDirecto",
+  "description": "Del campesino a tu mesa",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f3f6f3",
+  "theme_color": "#2e7d32",
+  "lang": "es",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entrar | CampoDirecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header id="app-header"></header>
+    <main>
+        <h1 id="page-title" class="page-title">Tu cuenta</h1>
+        <p class="muted">Guarda tu nombre para reconocer tus pedidos en este celular. No hay servidor todavía: la sesión queda en el navegador.</p>
+        <form id="loginForm" class="card">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" type="email" required>
+
+            <button type="submit">Guardar e ingresar</button>
+        </form>
+        <div class="acciones">
+            <button id="cerrarSesion" class="btn-secundario" type="button">Cerrar sesión</button>
+            <a class="btn-secundario" href="admin.html">Panel de la tienda</a>
+        </div>
+    </main>
+    <nav id="app-nav"></nav>
+    <script src="script/datos.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/login.js"></script>
+</body>
+</html>

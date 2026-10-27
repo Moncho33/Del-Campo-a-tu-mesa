@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CampoDirecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <meta name="description" content="Del campesino a tu mesa. Compra productos frescos del campo.">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icons/icon.svg">
+</head>
+<body>
+    <header id="app-header"></header>
+    <main>
+        <section class="hero">
+            <h1>Productos frescos del campo</h1>
+            <p>CampoDirecto es tu tienda para pedir verduras y alimentos del campo, sin intermediarios. El pedido llega a nosotros por WhatsApp y te lo confirmamos.</p>
+            <div class="acciones">
+                <a class="btn" href="productos.html">Ver catálogo</a>
+                <a class="btn-secundario" href="login.html">Entrar</a>
+            </div>
+        </section>
+        <h2 class="page-title">Destacados</h2>
+        <section id="destacados" class="productos"></section>
+    </main>
+    <nav id="app-nav"></nav>
+    <script src="script/datos.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/catalogo.js"></script>
+    <script src="script/index.js"></script>
+</body>
+</html>

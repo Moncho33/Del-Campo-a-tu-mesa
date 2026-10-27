@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle del pedido | CampoDirecto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#2e7d32">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+</head>
+<body>
+    <header id="app-header"></header>
+    <main>
+        <article class="card">
+            <h1 id="tituloPedido" class="page-title"></h1>
+            <p id="datosCliente" class="muted"></p>
+            <p id="estadoPedido"></p>
+            <ul id="detalleLista" class="lista"></ul>
+            <p id="totalPedido" class="total"></p>
+            <div class="acciones">
+                <button id="btnEntregado" type="button">Marcar como entregado</button>
+                <a id="btnWhatsApp" class="btn-secundario" target="_blank" rel="noopener">Reenviar por WhatsApp</a>
+                <a class="btn-secundario" href="pedidos.html">Volver a pedidos</a>
+            </div>
+        </article>
+    </main>
+    <nav id="app-nav"></nav>
+    <script src="script/datos.js"></script>
+    <script src="script/storage.js"></script>
+    <script src="script/nav.js"></script>
+    <script src="script/detallePedido.js"></script>
+</body>
+</html>
